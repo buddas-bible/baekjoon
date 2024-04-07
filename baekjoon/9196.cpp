@@ -9,80 +9,79 @@
 
 struct A
 {
-	constexpr A() : left(), right(), total() {}
-	A(int a, int b) :
-		total(a * a + b * b),
-		left(a),
-		right(b)
+	constexpr A() : h(), w(), total() {}
+
+	A(int h, int w) :
+		total(h * h + w * w),
+		h(h),
+		w(w)
 	{}
 
-	A(const A& _other) :
+	constexpr A(const A& _other) :
 		total(_other.total),
-		left(_other.left),
-		right(_other.right)
+		h(_other.h),
+		w(_other.w)
 	{}
+
+	constexpr A(A&& _other) noexcept :
+		total(_other.total),
+		h(_other.h),
+		w(_other.w)
+	{}
+
+	constexpr A& operator=(const A& _other)
+	{
+		if (this != &_other)
+		{
+			total = _other.total;
+			h = _other.h;
+			w = _other.w;
+		}
+
+		return *this;
+	}
+
+	constexpr A& operator=(A&& _other) noexcept
+	{
+		if (this != &_other)
+		{
+			total = _other.total;
+			h = _other.h;
+			w = _other.w;
+		}
+
+		return *this;
+	}
 
 	int total = 0;
-	int left = 0;
-	int right = 0;
+	int h = 0;
+	int w = 0;
 
 	bool operator<(const A& _other) const
 	{
-		if (total < _other.total)
-			return true;
-			
-		if (left < _other.left)
-			return true;
-
-		if (right < _other.right)
-			return true;
-
-		return false;
-	}
-
-	bool operator>(const A& _other) const
-	{
-		if (total > _other.total)
-			return true;
-
-		if (left > _other.left)
-			return true;
-
-		if (right > _other.right)
-			return true;
-
-		return false;
-	}
-
-	bool operator==(const A& _other) const
-	{
-		if (total != _other.total)
-			return false;
-
-		if (left != _other.left)
-			return false;
-
-		if (right != _other.right)
-			return false;
-
-		return true;
+		if (this->total != _other.total)
+		{
+			return total < _other.total;
+		}
+		else
+		{
+			return this->h < _other.h;
+		}
 	}
 };
 
-std::set<A> mapmap;
+std::set<A> map;
 
-template<int H, int W>
-constexpr void Set()
+constexpr void Get()
 {
-	for (int i = 1; i < H; i++)
+	for (int h = 1; h < 151; h++)
 	{
-		for (int j = i + 1; j < W; j++)
+		for (int w = h + 1; w < 152; w++)
 		{
-			mapmap.insert(A(i, j));
+			map.insert( std::move(A( h,  w )) );
 		}
 	}
 }
-
 
 int main()
 {
@@ -92,7 +91,7 @@ int main()
 
 	freopen("input.txt", "rt", stdin);
 
-	Set<151, 151>();
+	Get();
 
 	int h = 0;
 	int w = 1;
@@ -107,15 +106,18 @@ int main()
 		if (h == 0 && w == 0)
 			break;
 
-		int area = std::pow(h, 2) + std::pow(w, 2);
+		auto itr = map.find(A(h, w));
 
+		if (itr != map.end())
+		{
+			itr++;
+
+			H = (*itr).h;
+			W = (*itr).w;
+			std::cout << H << " " << W << std::endl;;
+		}
 	}
 
-
-
-
-
-	std::cout << H << " " << W;
 
 	return 0;
 }

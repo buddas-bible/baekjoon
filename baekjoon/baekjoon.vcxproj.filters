@@ -1,37 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
+    <Filter Include="source">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="source\동적 계획법">
+      <UniqueIdentifier>{b1a3ad6f-4a76-4cc9-ab70-f66c6f2c786c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="source\이진 탐색">
+      <UniqueIdentifier>{30d8663e-1191-4ba3-ac25-a47f8b46cd8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="template">
+      <UniqueIdentifier>{583a591d-ee69-45dc-b04f-8fe92450f7ae}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="11561.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="1076.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="13706.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="16564.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="9196.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="9184.cpp">
+      <Filter>source\동적 계획법</Filter>
+    </ClCompile>
+    <ClCompile Include="24416.cpp">
+      <Filter>source\동적 계획법</Filter>
+    </ClCompile>
+    <ClCompile Include="11561.cpp">
+      <Filter>source\이진 탐색</Filter>
     </ClCompile>
     <ClCompile Include="2467.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>source\이진 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1003.cpp">
+      <Filter>source\동적 계획법</Filter>
+    </ClCompile>
+    <ClCompile Include="13706.cpp">
+      <Filter>source\이진 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="temp.cpp">
+      <Filter>template</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
