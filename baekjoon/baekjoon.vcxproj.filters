@@ -46,5 +46,8 @@
     <ClCompile Include="temp.cpp">
       <Filter>template</Filter>
     </ClCompile>
+    <ClCompile Include="9184_2.cpp">
+      <Filter>source\동적 계획법</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
