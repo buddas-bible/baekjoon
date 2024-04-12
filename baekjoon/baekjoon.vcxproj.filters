@@ -67,5 +67,8 @@
     <ClCompile Include="20920.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="1845.cpp">
+      <Filter>source\이진 탐색</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
