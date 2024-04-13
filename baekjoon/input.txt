@@ -1,13 +1,12 @@
-12 5
-appearance
-append
-attendance
-swim
-swift
-swift
-swift
-mouse
-wallet
-mouse
-ice
-age
+6
+-3
+4
+9
+-2
+-5
+8
+3
+-1000
+-19
+-10000
+0

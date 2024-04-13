@@ -70,5 +70,11 @@
     <ClCompile Include="1845.cpp">
       <Filter>source\이진 탐색</Filter>
     </ClCompile>
+    <ClCompile Include="11687.cpp">
+      <Filter>source\이진 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="4097.cpp">
+      <Filter>source\동적 계획법</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
