@@ -4,36 +4,6 @@
 #include <queue>
 #include <stack>
 
-
-//struct A
-//{
-//	A(int a, int b) : left(a), right(b), total(left + right)
-//	{}
-//
-//	int total = 0;
-//	int left = 0;
-//	int right = 0;
-//
-//	bool operator<(const A& _other)
-//	{
-//		return total < _other.total;
-//	}
-//	bool operator>(const A& _other)
-//	{
-//		return total > _other.total;
-//	}
-//	bool operator==(const A& _other)
-//	{
-//		return total == _other.total;
-//	}
-//
-//};
-//
-//std::ostream& operator<<(std::ostream& _other)
-//{
-//	return _other << _other.left << " " << _other.right;
-//}
-
 int main()
 {
 	std::cin.tie();

@@ -17,6 +17,15 @@
     <Filter Include="source\미분류">
       <UniqueIdentifier>{a62da67e-9970-4b78-bccd-b68fe2bcfb36}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\미해결">
+      <UniqueIdentifier>{64fa3661-2abf-4a8d-9d61-75de1f17424e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\DFS">
+      <UniqueIdentifier>{c2e3a974-66cd-4a24-9bc4-17a2250597fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\BFS">
+      <UniqueIdentifier>{a3f9cab7-042d-4838-b7b6-0589c82a3fad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="9184.cpp">
@@ -58,12 +67,6 @@
     <ClCompile Include="9196.cpp">
       <Filter>source\미분류</Filter>
     </ClCompile>
-    <ClCompile Include="16564.cpp">
-      <Filter>source\미분류</Filter>
-    </ClCompile>
-    <ClCompile Include="22871.cpp">
-      <Filter>source\미분류</Filter>
-    </ClCompile>
     <ClCompile Include="20920.cpp">
       <Filter>source</Filter>
     </ClCompile>
@@ -79,14 +82,32 @@
     <ClCompile Include="14916.cpp">
       <Filter>source\미분류</Filter>
     </ClCompile>
-    <ClCompile Include="9372.cpp">
-      <Filter>source\미분류</Filter>
-    </ClCompile>
     <ClCompile Include="17179.cpp">
-      <Filter>source\미분류</Filter>
+      <Filter>source\미해결</Filter>
+    </ClCompile>
+    <ClCompile Include="9372.cpp">
+      <Filter>source\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="16564.cpp">
+      <Filter>source\미해결</Filter>
+    </ClCompile>
+    <ClCompile Include="22871.cpp">
+      <Filter>source\미해결</Filter>
     </ClCompile>
     <ClCompile Include="1012.cpp">
-      <Filter>source\미분류</Filter>
+      <Filter>source\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="4485.cpp">
+      <Filter>source\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="7569.cpp">
+      <Filter>source\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="test1.cpp">
+      <Filter>template</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
