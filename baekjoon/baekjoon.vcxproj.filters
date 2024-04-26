@@ -26,6 +26,9 @@
     <Filter Include="source\BFS">
       <UniqueIdentifier>{a3f9cab7-042d-4838-b7b6-0589c82a3fad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\세그멘트 트리">
+      <UniqueIdentifier>{99901fef-587f-4d63-b71d-ccc254632114}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="9184.cpp">
@@ -107,6 +110,27 @@
       <Filter>template</Filter>
     </ClCompile>
     <ClCompile Include="test1.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="Test01.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="1245.cpp">
+      <Filter>source\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="31670.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="10868.cpp">
+      <Filter>source\미해결</Filter>
+    </ClCompile>
+    <ClCompile Include="1926.cpp">
+      <Filter>source\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="16954.cpp">
+      <Filter>source\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="4577.cpp">
       <Filter>template</Filter>
     </ClCompile>
   </ItemGroup>
