@@ -140,6 +140,12 @@
       <Filter>source\동적 계획법</Filter>
     </ClCompile>
     <ClCompile Include="2665.cpp">
+      <Filter>source\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="28449.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="12442.cpp">
       <Filter>template</Filter>
     </ClCompile>
   </ItemGroup>
