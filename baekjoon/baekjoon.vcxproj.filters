@@ -29,6 +29,9 @@
     <Filter Include="source\세그멘트 트리">
       <UniqueIdentifier>{99901fef-587f-4d63-b71d-ccc254632114}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\구현">
+      <UniqueIdentifier>{7c4b34ab-5b8c-45c8-9ba3-86cc3fa3e606}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="9184.cpp">
@@ -118,9 +121,6 @@
     <ClCompile Include="1245.cpp">
       <Filter>source\BFS</Filter>
     </ClCompile>
-    <ClCompile Include="31670.cpp">
-      <Filter>template</Filter>
-    </ClCompile>
     <ClCompile Include="10868.cpp">
       <Filter>source\미해결</Filter>
     </ClCompile>
@@ -131,6 +131,15 @@
       <Filter>source\BFS</Filter>
     </ClCompile>
     <ClCompile Include="4577.cpp">
+      <Filter>source\구현</Filter>
+    </ClCompile>
+    <ClCompile Include="31670.cpp">
+      <Filter>source\미해결</Filter>
+    </ClCompile>
+    <ClCompile Include="28422.cpp">
+      <Filter>source\동적 계획법</Filter>
+    </ClCompile>
+    <ClCompile Include="2665.cpp">
       <Filter>template</Filter>
     </ClCompile>
   </ItemGroup>
