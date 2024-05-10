@@ -155,6 +155,12 @@
       <Filter>source\동적 계획법</Filter>
     </ClCompile>
     <ClCompile Include="1756.cpp">
+      <Filter>source\이진 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1394.cpp">
+      <Filter>source\구현</Filter>
+    </ClCompile>
+    <ClCompile Include="2174.cpp">
       <Filter>template</Filter>
     </ClCompile>
   </ItemGroup>
