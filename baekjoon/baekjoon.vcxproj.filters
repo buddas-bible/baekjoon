@@ -160,8 +160,11 @@
     <ClCompile Include="1394.cpp">
       <Filter>source\구현</Filter>
     </ClCompile>
-    <ClCompile Include="2174.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="2174.cpp">
+      <Filter>source\구현</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
