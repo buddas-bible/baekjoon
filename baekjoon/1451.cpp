@@ -39,7 +39,7 @@ struct Rect
 
 int n = 0;
 int m = 0;
-std::vector < std::vector < std::pair<int, bool> > > rect;
+std::vector<std::vector<int>> rect;
 std::stack<std::vector<Rect>> search;
 int result = 0;
 
@@ -52,7 +52,7 @@ void Input()
 	freopen("input.txt", "rt", stdin);
 	std::cin >> n >> m;
 
-	rect = std::vector(n, std::vector<std::pair<int, bool> >(m));
+	rect = std::vector(n, std::vector<int>(m));
 
 	for (size_t i = 0; i < n; i++)
 	{
@@ -63,8 +63,7 @@ void Input()
 		{
 			char data = input[j];
 			char zero = '0';
-			rect[i][j].first = data - zero;
-			rect[i][j].second = false;
+			rect[i][j] = data - zero;
 		}
 	}
 }
@@ -73,6 +72,93 @@ void Divide()
 {
 	std::vector<Rect> arr;
 	arr.emplace_back(0, 0);
+
+	if (n > 2 && m > 2)
+	{
+		// case 1
+		{
+			// 1 2
+			// 33
+			int rect1 = 0;
+			int rect2 = 0;
+			int rect3 = 0;
+			{
+				// rect1
+				// i x j
+
+				// rect2
+				// i x (m - j)
+
+				// rect3
+				// (n - i) x m
+			}
+		}
+
+		// case 2
+		{
+			// 11
+			// 2 3
+			int rect1 = 0;
+			int rect2 = 0;
+			int rect3 = 0;
+			for (int i = 0; i < n - 1; i++)
+			{
+				// rect1
+				// i x m
+
+				// rect2
+				// (n - i) x j
+
+				// rect3
+				// (n - i) x (m - j)
+			}
+		}
+	}
+
+
+	// case 3
+	if (n > 3)
+	{
+
+		// 11
+		// 22
+		// 33
+		int rect1 = 0;
+		int rect2 = 0;
+		int rect3 = 0;
+		for (int i = 0; i < m; i++)
+		{
+			// rect1
+			// i x m
+
+			// rect2
+			// j x m
+
+			// rect3
+			// (n - i - j) x m
+		}
+	}
+
+	// case 4
+	if (m > 3)
+	{
+		// 1 2 3
+		// 1 2 3
+		int rect1 = 0;
+		int rect2 = 0;
+		int rect3 = 0;
+
+		// rect1
+		// n x i
+
+		// rect2
+		// n x j
+
+		// rect3
+		// n x (m - i - j)
+		}
+	}
+
 }
 
 void Output()

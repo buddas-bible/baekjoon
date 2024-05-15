@@ -32,6 +32,9 @@
     <Filter Include="source\구현">
       <UniqueIdentifier>{7c4b34ab-5b8c-45c8-9ba3-86cc3fa3e606}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\MST">
+      <UniqueIdentifier>{7f839f49-15a1-4ed1-8261-2d70e7bd6d66}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="9184.cpp">
@@ -166,14 +169,23 @@
     <ClCompile Include="2174.cpp">
       <Filter>source\구현</Filter>
     </ClCompile>
-    <ClCompile Include="1451.cpp">
-      <Filter>template</Filter>
+    <ClCompile Include="1646_2.cpp">
+      <Filter>source\MST</Filter>
     </ClCompile>
     <ClCompile Include="1647.cpp">
-      <Filter>template</Filter>
+      <Filter>source\MST</Filter>
     </ClCompile>
-    <ClCompile Include="1646_2.cpp">
-      <Filter>template</Filter>
+    <ClCompile Include="1451.cpp">
+      <Filter>source\미해결</Filter>
+    </ClCompile>
+    <ClCompile Include="1365_2.cpp">
+      <Filter>source\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1365.cpp">
+      <Filter>source\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1313.cpp">
+      <Filter>source\미해결</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
