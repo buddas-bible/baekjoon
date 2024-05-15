@@ -166,5 +166,14 @@
     <ClCompile Include="2174.cpp">
       <Filter>source\구현</Filter>
     </ClCompile>
+    <ClCompile Include="1451.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="1647.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="1646_2.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
