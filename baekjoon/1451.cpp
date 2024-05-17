@@ -113,6 +113,46 @@ void Divide()
 				// (n - i) x (m - j)
 			}
 		}
+
+		// case 2
+		{
+			// 1 2
+			// 1 3
+			int rect1 = 0;
+			int rect2 = 0;
+			int rect3 = 0;
+			for (int i = 0; i < n - 1; i++)
+			{
+				// rect1
+				// i x m
+
+				// rect2
+				// (n - i) x j
+
+				// rect3
+				// (n - i) x (m - j)
+			}
+		}
+
+		// case 2
+		{
+			// 1 3
+			// 2 3
+			int rect1 = 0;
+			int rect2 = 0;
+			int rect3 = 0;
+			for (int i = 0; i < n - 1; i++)
+			{
+				// rect1
+				// i x m
+
+				// rect2
+				// (n - i) x j
+
+				// rect3
+				// (n - i) x (m - j)
+			}
+		}
 	}
 
 
