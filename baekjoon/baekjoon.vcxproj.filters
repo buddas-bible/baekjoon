@@ -191,6 +191,9 @@
       <Filter>template</Filter>
     </ClCompile>
     <ClCompile Include="1153.cpp">
+      <Filter>source\구현</Filter>
+    </ClCompile>
+    <ClCompile Include="2513.cpp">
       <Filter>template</Filter>
     </ClCompile>
   </ItemGroup>

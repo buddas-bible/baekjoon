@@ -9,19 +9,15 @@ void Eratosthenes(std::vector<bool>& _arr)
 {
 	_arr[0] = false;
 	_arr[1] = false;
-	for (int i = 2; i * i <= 1'000'000; i++)
+
+	for (int i = 2; i * i < _arr.size(); i++)
 	{
 		if (!_arr[i])
 			continue;
 
-		for (int j = 2; i * j <= 1'000'000; j++)
+		for (int j = 2; i * j < _arr.size(); j++)
 			_arr[i * j] = false;
 	}
-}
-
-bool PrimeDivide(int _x, int& _out0, int& _out1)
-{
-	
 }
 
 void Input()
@@ -34,37 +30,52 @@ void Input()
 	std::cin >> n;
 }
 
-void BinarySearch()
-{
-	
-}
-
 int main()
 {
-	std::vector<bool> eratosthenes(1'000'001, true);
-	Eratosthenes(eratosthenes);
+	Input();
 
-	std::vector<int> prime;
-	for (int i = 2; i < eratosthenes.size(); i++)
+	if (n < 8)
 	{
-		if (eratosthenes[i])
-			prime.emplace_back(i);
+		std::cout << -1 << '\n';
+		return 0;
 	}
 
-	Input();
+	std::vector<bool> eratosthenes(n + 1, true);
+	Eratosthenes(eratosthenes);
 
 	std::vector<int> result(4, -1);
 
-	std::sort(result.begin(), result.end());
-
-	if (result[0] == -1)
+	if (n % 2 == 0)
 	{
-			std::cout << -1;
+		n -= 4;
+
+		result[0] = 2;
+		result[1] = 2;
 	}
 	else
 	{
-		for (int i = 0; i < 4; i++)
-			std::cout << result[i] << " ";
+		n -= 5;
+
+		result[0] = 2;
+		result[1] = 3;
 	}
+
+	for (int i = 2; i <= n; i++)
+	{
+		if (eratosthenes[i] && eratosthenes[n - i])
+		{
+			result[2] = i;
+			result[3] = n - i;
+			break;
+		}
+	}
+
+
+	for (int i = 0; i < 4; i++)
+		std::cout << result[i] << " ";
+
+	std::cout << '\n';
+
+
 	return 0;
 }
