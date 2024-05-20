@@ -196,5 +196,8 @@
     <ClCompile Include="2513.cpp">
       <Filter>template</Filter>
     </ClCompile>
+    <ClCompile Include="2239.cpp">
+      <Filter>source\미해결</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
