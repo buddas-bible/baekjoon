@@ -193,11 +193,14 @@
     <ClCompile Include="1153.cpp">
       <Filter>source\구현</Filter>
     </ClCompile>
-    <ClCompile Include="2513.cpp">
-      <Filter>template</Filter>
-    </ClCompile>
     <ClCompile Include="2239.cpp">
       <Filter>source\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="2805.cpp">
+      <Filter>source\이진 탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2513.cpp">
+      <Filter>template</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -4,9 +4,9 @@
 #include <map>
 #include <algorithm>
 
-int n = 0;
-int k = 0;
-int s = 0;
+int n = 0;	// 아파트 단지
+int k = 0;	// 버스 정원
+int s = 0;	// 학교 위치
 
 std::vector<std::pair<int, int>> data;
 
