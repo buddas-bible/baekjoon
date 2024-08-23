@@ -202,5 +202,26 @@
     <ClCompile Include="2513.cpp">
       <Filter>template</Filter>
     </ClCompile>
+    <ClCompile Include="3184.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="1992.cpp">
+      <Filter>source\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1456.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="2583.cpp">
+      <Filter>source\BFS</Filter>
+    </ClCompile>
+    <ClCompile Include="1520.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="9024.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
+    <ClCompile Include="소스1.cpp">
+      <Filter>template</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
